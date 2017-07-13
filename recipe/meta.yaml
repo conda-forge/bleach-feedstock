@@ -17,7 +17,7 @@ build:
   script: pip install --no-deps .
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
