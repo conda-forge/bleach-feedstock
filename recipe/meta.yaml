@@ -1,6 +1,6 @@
 {% set name = "bleach" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "978e758599b54cd3caa2e160d74102879b230ea8dc93871d0783721eef58bc65" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "b9522130003e4caedf4f00a39c120a906dcd4242329c1c8f621f5370203cbc30" %}
 
 package:
   name: {{ name }}
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python
-    - html5lib >=0.999,!=0.9999,!=0.99999,<0.99999999
+    - html5lib >=0.99999999
     - six
 
 test:
@@ -33,8 +33,15 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: Bleach is a whitelist-based HTML sanitizing library that escapes or strips markup and attributes.
-
+  summary: 'An easy safelist-based HTML-sanitizing tool.'
+  description: |
+      Bleach is a whitelist-based HTML sanitizing library that escapes or
+      strips markup and attributes. It can also linkify text safely, applying
+      filters, and optionally setting rel attributes, even on links already in
+      the text. It is intended for sanitizing text from untrusted sources. It
+      is as good as modern browsers at dealing with weird, quirky HTML
+      fragments. And any of Bleach's methods will fix unbalanced or mis-nested
+      tags.
   dev_url: https://github.com/mozilla/bleach
   doc_url: https://bleach.readthedocs.io/
 
