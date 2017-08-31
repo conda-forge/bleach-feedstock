@@ -33,8 +33,15 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: Bleach is a whitelist-based HTML sanitizing library that escapes or strips markup and attributes.
-
+  summary: 'An easy safelist-based HTML-sanitizing tool.'
+  description: |
+      Bleach is a whitelist-based HTML sanitizing library that escapes or
+      strips markup and attributes. It can also linkify text safely, applying
+      filters, and optionally setting rel attributes, even on links already in
+      the text. It is intended for sanitizing text from untrusted sources. It
+      is as good as modern browsers at dealing with weird, quirky HTML
+      fragments. And any of Bleach's methods will fix unbalanced or mis-nested
+      tags.
   dev_url: https://github.com/mozilla/bleach
   doc_url: https://bleach.readthedocs.io/
 
