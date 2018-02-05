@@ -14,9 +14,7 @@ Summary: Bleach is a whitelist-based HTML sanitizing library that escapes or str
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/bleach-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/bleach-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/bleach-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/bleach-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/bleach-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/bleach-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/bleach-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/bleach-feedstock)
 
 Current release info
 ====================
@@ -66,6 +64,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
