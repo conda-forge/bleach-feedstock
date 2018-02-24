@@ -1,6 +1,6 @@
 {% set name = "bleach" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "b9522130003e4caedf4f00a39c120a906dcd4242329c1c8f621f5370203cbc30" %}
+{% set version = "2.1.2" %}
+{% set sha256 = "38fc8cbebea4e787d8db55d6f324820c7f74362b70db9142c1ac7920452d1a19" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: pip install --no-deps .
 
