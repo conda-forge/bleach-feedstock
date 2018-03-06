@@ -23,6 +23,7 @@ requirements:
   run:
     - python
     - html5lib >=0.99999999
+    - setuptools
     - six
 
 test:
