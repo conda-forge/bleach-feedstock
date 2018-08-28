@@ -1,20 +1,17 @@
-{% set name = "bleach" %}
 {% set version = "2.1.4" %}
-{% set sha256 = "0ee95f6167129859c5dce9b1ca291ebdb5d8cd7e382ca0e237dfd0dad63f63d8" %}
 
 package:
-  name: {{ name }}
+  name: bleach
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/b/bleach/bleach-{{ version }}.tar.gz
+  sha256: 0ee95f6167129859c5dce9b1ca291ebdb5d8cd7e382ca0e237dfd0dad63f63d8
 
 build:
   number: 1
   noarch: python
-  script: pip install --no-deps .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   host:
@@ -46,3 +43,4 @@ about:
 extra:
   recipe-maintainers:
     - minrk
+    - ocefpaf
