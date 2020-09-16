@@ -5,7 +5,7 @@ Home: https://github.com/mozilla/bleach
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Easy, whitelist-based HTML-sanitizing tool
 
