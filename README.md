@@ -5,9 +5,13 @@ Home: https://github.com/mozilla/bleach
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bleach-feedstock/blob/master/LICENSE.txt)
 
 Summary: Easy, whitelist-based HTML-sanitizing tool
+
+Development: https://github.com/mozilla/bleach
+
+Documentation: https://bleach.readthedocs.io/
 
 Bleach is an allowed-list-based HTML sanitizing library that escapes or
 strips markup and attributes.
