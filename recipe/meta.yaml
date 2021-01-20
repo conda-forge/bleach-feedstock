@@ -1,4 +1,4 @@
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: bleach
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/b/bleach/bleach-{{ version }}.tar.gz
-  sha256: 52b5919b81842b1854196eaae5ca29679a2f2e378905c346d3ca8227c2c66080
+  sha256: ce6270dd0ae56cd810495b8d994551ae16b41f2b4043cf50064f298985afdb3c
 
 build:
   number: 0
