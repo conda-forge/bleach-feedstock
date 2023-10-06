@@ -1,11 +1,11 @@
-About bleach
-============
+About bleach-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bleach-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/mozilla/bleach
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bleach-feedstock/blob/main/LICENSE.txt)
 
 Summary: Easy, whitelist-based HTML-sanitizing tool
 
