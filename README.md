@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bleach-feedstoc
 
 Home: https://github.com/mozilla/bleach
 
-Package license: Apache-2.0
+Package license: Apache-2.0 AND MIT
 
 Summary: Easy, whitelist-based HTML-sanitizing tool
 
