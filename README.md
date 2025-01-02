@@ -3,6 +3,10 @@ About bleach-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bleach-feedstock/blob/main/LICENSE.txt)
 
+
+About bleach
+------------
+
 Home: https://github.com/mozilla/bleach
 
 Package license: Apache-2.0 AND MIT
@@ -16,6 +20,15 @@ Documentation: https://bleach.readthedocs.io/
 Bleach is an allowed-list-based HTML sanitizing library that escapes or
 strips markup and attributes.
 
+
+About bleach-with-css
+---------------------
+
+
+
+Package license: 
+
+Summary: Easy, whitelist-based HTML-sanitizing tool (with [css])
 
 Current build status
 ====================
@@ -36,6 +49,7 @@ Current release info
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-bleach-green.svg)](https://anaconda.org/conda-forge/bleach) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bleach.svg)](https://anaconda.org/conda-forge/bleach) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bleach.svg)](https://anaconda.org/conda-forge/bleach) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bleach.svg)](https://anaconda.org/conda-forge/bleach) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-bleach--with--css-green.svg)](https://anaconda.org/conda-forge/bleach-with-css) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/bleach-with-css.svg)](https://anaconda.org/conda-forge/bleach-with-css) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/bleach-with-css.svg)](https://anaconda.org/conda-forge/bleach-with-css) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/bleach-with-css.svg)](https://anaconda.org/conda-forge/bleach-with-css) |
 
 Installing bleach
 =================
@@ -47,16 +61,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `bleach` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `bleach, bleach-with-css` can be installed with `conda`:
 
 ```
-conda install bleach
+conda install bleach bleach-with-css
 ```
 
 or with `mamba`:
 
 ```
-mamba install bleach
+mamba install bleach bleach-with-css
 ```
 
 It is possible to list all of the versions of `bleach` available on your platform with `conda`:
