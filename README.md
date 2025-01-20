@@ -20,15 +20,21 @@ Documentation: https://bleach.readthedocs.io/
 Bleach is an allowed-list-based HTML sanitizing library that escapes or
 strips markup and attributes.
 
-
 About bleach-with-css
 ---------------------
 
+Home: https://github.com/mozilla/bleach
 
-
-Package license: 
+Package license: Apache-2.0 AND MIT
 
 Summary: Easy, whitelist-based HTML-sanitizing tool (with [css])
+
+Development: https://github.com/mozilla/bleach
+
+Documentation: https://bleach.readthedocs.io/
+
+Bleach is an allowed-list-based HTML sanitizing library that escapes or
+strips markup and attributes.
 
 Current build status
 ====================
