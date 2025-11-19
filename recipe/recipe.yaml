@@ -53,7 +53,7 @@ outputs:
         - tinycss2
     tests:
       - python:
-          imports: bleach
+          imports: bleach.css_sanitizer
           pip_check: true
           python_version:
             - ${{ python_min }}.*
