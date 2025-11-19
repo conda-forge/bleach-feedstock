@@ -1,17 +1,21 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
 context:
-  name: bleach
-  version: 6.2.0
+  version: "6.3.0"
+  python_check_max: "3.14"
 
 recipe:
-  name: ${{ name }}
+  name: bleach-split
   version: ${{ version }}
 
 source:
   url: https://pypi.org/packages/source/b/bleach/bleach-${{ version }}.tar.gz
-  sha256: 123e894118b8a599fd80d3ec1a6d4cc7ce4e5882b1317a7e1ba69b56e95f991f
+  sha256: 6f3b91b1c0a02bb9a78b5a454c92506aa0fdf197e1d5e114d2e00c6f64306d22
 
 build:
-  number: 4
+  number: 0
+  noarch: python
 
 outputs:
   - package:
@@ -19,7 +23,7 @@ outputs:
     build:
       noarch: python
       script:
-        - python -m pip install . -vv
+        - python -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
     requirements:
       host:
         - pip
@@ -32,10 +36,12 @@ outputs:
         - tinycss >=1.1.0,<1.5
     tests:
       - python:
+          imports: bleach
           pip_check: true
-          python_version: ${{ python_min }}
-          imports:
-            - bleach
+          python_version:
+            - ${{ python_min }}.*
+            - ${{ python_check_max }}.*
+
   - package:
       name: ${{ name }}-with-css
     build:
@@ -48,8 +54,10 @@ outputs:
     tests:
       - python:
           imports: bleach
-          python_version: ${{ python_min }}
           pip_check: true
+          python_version:
+            - ${{ python_min }}.*
+            - ${{ python_check_max }}.*
     about:
       summary: Easy, whitelist-based HTML-sanitizing tool (with [css])
 
