@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "6.3.0"
+  version: "6.4.0"
   python_check_max: "3.14"
 
 recipe:
@@ -11,10 +11,10 @@ recipe:
 
 source:
   url: https://pypi.org/packages/source/b/bleach/bleach-${{ version }}.tar.gz
-  sha256: 6f3b91b1c0a02bb9a78b5a454c92506aa0fdf197e1d5e114d2e00c6f64306d22
+  sha256: 4202482733d85cedd04e59fcb2f89f4e4c7c385a78d3c3c23c30446843a37452
 
 build:
-  number: 1
+  number: 0
   noarch: python
 
 outputs:
